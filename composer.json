@@ -1,0 +1,15 @@
+{
+    "name": "stickee/rector-config",
+    "type": "library",
+    "require": {
+        "rector/rector": "^0.14.6",
+        "driftingly/rector-laravel": "^0.14.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul",
+            "email": "paul.tibbetts@stickee.co.uk"
+        }
+    ]
+}
