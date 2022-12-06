@@ -18,9 +18,9 @@ return static function (RectorConfig $rectorConfig): void {
         SetList::CODE_QUALITY,
         SetList::CODING_STYLE,
         SetList::TYPE_DECLARATION,
-        LevelSetList::UP_TO_PHP_74,
+        LevelSetList::UP_TO_PHP_81,
         LaravelSetList::LARAVEL_CODE_QUALITY,
-        LaravelLevelSetList::UP_TO_LARAVEL_60,
+        LaravelLevelSetList::UP_TO_LARAVEL_90,
     ]);
 
     $rectorConfig->skip([
@@ -31,6 +31,8 @@ return static function (RectorConfig $rectorConfig): void {
         \Rector\DeadCode\Rector\ClassMethod\RemoveUselessReturnTagRector::class, // removes return from docblocks
         \Rector\CodingStyle\Rector\PostInc\PostIncDecToPreIncDecRector::class, // changes $i++ to ++$i
         \Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector::class, // changes "th{$is}" to sprintf('th%s', 'is')
+        \Rector\Php80\Rector\FunctionLike\MixedTypeRector::class, // removes docblocks
+        \Rector\Php80\Rector\FunctionLike\UnionTypesRector::class, // removes docblocks
     ]);
 
 };
