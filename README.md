@@ -17,6 +17,6 @@ _[Why do we install Rector into its own directory?](https://github.com/FriendsOf
 ## Usage
 
 ```shell
-tools/rector/bin/rector process           # refactors code 
-tools/rector/bin/rector process --dry-run # shows you what it would do
+tools/rector/vendor/bin/rector process           # refactors code
+tools/rector/vendor/bin/rector process --dry-run # shows you what it would do
 ```
