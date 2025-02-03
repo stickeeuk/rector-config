@@ -3,8 +3,8 @@
     "type": "library",
     "require": {
         "php": "^8.3",
-        "rector/rector": "^1.2.10",
-        "driftingly/rector-laravel": "^1.2.6"
+        "rector/rector": "^2.0.7",
+        "driftingly/rector-laravel": "^2.0.2"
     },
     "license": "MIT",
     "authors": [
